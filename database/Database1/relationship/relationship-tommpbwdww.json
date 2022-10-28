@@ -1,0 +1,29 @@
+{
+	"name": "relationship-tommpbwdww",
+	"properties": {
+		"Name": "relationship-tommpbwdww",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "Database1"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "ProjectActivity",
+		"ToTableName": "ProjectActivityTask",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ProjectId",
+				"ToColumnName": "ProjectId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"ProjectActivity.cdm.json/ProjectActivity\",\"toEntity\":\"ProjectActivityTask.cdm.json/ProjectActivityTask\",\"joinPairs\":[{\"fromAttribute\":\"ProjectId\",\"toAttribute\":\"ProjectId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "a1e9fc0c-8176-4ec8-83c0-e697efced048"
+	},
+	"type": "RELATIONSHIP"
+}

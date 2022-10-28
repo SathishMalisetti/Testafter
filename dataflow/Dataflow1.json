@@ -1,0 +1,60 @@
+{
+	"name": "Dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          ProjectId as integer,",
+				"          ProjectName as string,",
+				"          ProjectDescription as string,",
+				"          ProjectTypeId as integer,",
+				"          ProjectPlannedStartTimestamp as timestamp,",
+				"          ProjectPlannedEndTimestamp as timestamp,",
+				"          ProjectEarliestStartTimestamp as timestamp,",
+				"          ProjectEarliestEndTimestamp as timestamp,",
+				"          ProjectLatestStartTimestamp as timestamp,",
+				"          ProjectLatestEndTimestamp as timestamp,",
+				"          ProjectClosingTimestamp as timestamp,",
+				"          ProjectRiskAssessmentStatement as string,",
+				"          ProjectWorkStatement as string,",
+				"          ProjectCharterStatement as string,",
+				"          BusinessCaseStatement as string,",
+				"          LocationId as integer,",
+				"          ProjectGlAccountNumber as string,",
+				"          ResponsibilityCenterId as integer,",
+				"          ProjectNote as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'synapse',",
+				"     databaseType: 'spark',",
+				"     format: 'table',",
+				"     database: 'Database1',",
+				"     tableName: 'Project') ~> source1",
+				"source1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
+			]
+		}
+	}
+}

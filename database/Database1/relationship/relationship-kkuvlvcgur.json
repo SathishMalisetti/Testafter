@@ -1,0 +1,29 @@
+{
+	"name": "relationship-kkuvlvcgur",
+	"properties": {
+		"Name": "relationship-kkuvlvcgur",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "Database1"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "ProjectActivity",
+		"ToTableName": "ProjectActivityTask",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ActivityId",
+				"ToColumnName": "ActivityId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"ProjectActivity.cdm.json/ProjectActivity\",\"toEntity\":\"ProjectActivityTask.cdm.json/ProjectActivityTask\",\"joinPairs\":[{\"fromAttribute\":\"ActivityId\",\"toAttribute\":\"ActivityId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "b5d4a616-3b06-4c71-9a6b-28f1d592419e"
+	},
+	"type": "RELATIONSHIP"
+}

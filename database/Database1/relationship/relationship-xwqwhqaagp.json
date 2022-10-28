@@ -1,0 +1,29 @@
+{
+	"name": "relationship-xwqwhqaagp",
+	"properties": {
+		"Name": "relationship-xwqwhqaagp",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "Database1"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Project",
+		"ToTableName": "ProjectActivity",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "ProjectId",
+				"ToColumnName": "ProjectId"
+			}
+		],
+		"RelationshipType": 0,
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Project.cdm.json/Project\",\"toEntity\":\"ProjectActivity.cdm.json/ProjectActivity\",\"joinPairs\":[{\"fromAttribute\":\"ProjectId\",\"toAttribute\":\"ProjectId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "328a8c29-9645-40fd-9058-81de53a3c432"
+	},
+	"type": "RELATIONSHIP"
+}
